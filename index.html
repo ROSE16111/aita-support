@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AITA - 评评理 技术支持</title>
+    <meta
+      name="description"
+      content="AITA - 评评理技术支持、常见问题、隐私说明与联系方式。"
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f7fb;
+        --panel: #ffffff;
+        --text: #15151a;
+        --muted: #62636b;
+        --line: #dedfe7;
+        --accent: #5b5ce2;
+        --accent-strong: #3e3fd1;
+        --danger: #b42318;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #111216;
+          --panel: #1c1d22;
+          --text: #f5f5f7;
+          --muted: #b1b1ba;
+          --line: #33343b;
+          --accent: #7b7cff;
+          --accent-strong: #a5a6ff;
+          --danger: #ff8a80;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        line-height: 1.65;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0;
+      }
+
+      header {
+        padding: 40px 0 28px;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 12px 0 14px;
+        font-size: clamp(36px, 7vw, 64px);
+        line-height: 1.08;
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 24px;
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      a {
+        color: var(--accent-strong);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .lead {
+        max-width: 720px;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 20px;
+      }
+
+      section {
+        margin-top: 18px;
+        padding: 24px;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+      }
+
+      ul,
+      ol {
+        margin: 10px 0 0;
+        padding-left: 22px;
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      .notice {
+        border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
+      }
+
+      .warning {
+        border-color: color-mix(in srgb, var(--danger) 35%, var(--line));
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .contact {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        margin-top: 8px;
+        padding: 0 16px;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #fff;
+        font-weight: 700;
+      }
+
+      .contact:hover {
+        background: var(--accent-strong);
+        text-decoration: none;
+      }
+
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          width: min(100% - 24px, 920px);
+          padding: 32px 0;
+        }
+
+        header {
+          padding-top: 24px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        section {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Support</div>
+        <h1>AITA - 评评理 技术支持</h1>
+        <p class="lead">
+          这里提供 AITA - 评评理的使用说明、常见问题、数据与隐私说明，以及联系支持的方式。
+        </p>
+      </header>
+
+      <section class="notice">
+        <h2>联系我们</h2>
+        <p>
+          如果你在登录、录音、上传音频、AI 分析或历史记录中遇到问题，请通过邮件联系我们。
+        </p>
+        <a class="contact" href="mailto:connozhao@icloud.com?subject=AITA%20-%20%E8%AF%84%E8%AF%84%E7%90%86%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">
+          发送支持邮件
+        </a>
+        <p class="muted">支持邮箱：connozhao@icloud.com</p>
+      </section>
+
+      <div class="grid">
+        <section>
+          <h2>快速开始</h2>
+          <ol>
+            <li>注册或登录账号。</li>
+            <li>点击录音按钮，允许麦克风权限。</li>
+            <li>录制一段需要复盘的对话或说明。</li>
+            <li>点击“结束并评理”，等待 AI 返回分析结果。</li>
+            <li>登录用户可以在历史页查看之前的分析记录。</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>上传音频</h2>
+          <ul>
+            <li>点击录音页的“上传”。</li>
+            <li>选择“从文件选择音频”可上传 m4a、mp3、wav 等音频文件。</li>
+            <li>选择“从相册选择视频”可上传带声音的视频或屏幕录制。</li>
+            <li>iPhone 语音备忘录请先“分享 → 存储到文件”，再从文件中选择。</li>
+          </ul>
+        </section>
+      </div>
+
+      <section>
+        <h2>常见问题</h2>
+        <h3>为什么分析时间有时较长？</h3>
+        <p>
+          分析时间取决于音频长度、网络状态、所选 AI 模型和服务繁忙程度。请保持网络连接并等待结果返回。
+        </p>
+
+        <h3>为什么历史记录为空？</h3>
+        <p>
+          历史记录仅对登录用户保存。请确认你已经登录，并且分析完成后再查看历史页。
+        </p>
+
+        <h3>为什么提示网络请求失败？</h3>
+        <p>
+          请检查网络连接，尝试切换 Wi-Fi / 蜂窝网络，或稍后重试。部分网络环境可能无法稳定访问后端服务。
+        </p>
+
+        <h3>为什么无法使用 Pro 模型？</h3>
+        <p>
+          Pro 模型需要登录后使用。Guest 模式每日可试用有限次数，并且不支持 Pro 模型。
+        </p>
+      </section>
+
+      <section class="warning">
+        <h2>重要说明</h2>
+        <p>
+          AITA - 评评理的分析结果仅供沟通复盘参考，不构成法律、医疗、心理咨询、财务或其他专业意见。
+          涉及重要决策或专业问题时，请咨询相关专业人士。
+        </p>
+      </section>
+
+      <section>
+        <h2>数据与隐私</h2>
+        <p>
+          为提供分析与历史记录功能，应用可能处理你的账号信息、录音或上传音频、转写文本、AI 分析结果和基础诊断日志。
+          我们不会将分析结果用于广告追踪。
+        </p>
+        <p>
+          如需删除账号相关历史记录，请通过支持邮箱联系我们，并提供你的登录邮箱。
+        </p>
+      </section>
+
+      <footer>
+        <p>© 2026 Kang Zhao. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>
